@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: url(images/oilstrike75-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.container{
+    padding: 10px 20%;
+}
+.box{
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ff004f;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.sub-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* ----------nav---------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #ff004f;
+    font-size: 30px;
+    position: relative;
+}
+nav ul li a:hover{
+    text-decoration-color: #fff;
+}
+
+/* ----------header---------- */
+#header{
+    width: 100%;
+    background-color: #1a1a1a;
+    margin-bottom: 30px;
+}
+.title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: #b54769;
+    background-image: linear-gradient(to right, #bbb, #ff004f);
+    border-radius: 20px;
+}
+.headshot{
+    margin: 10px;
+    width: 240px;
+    border-radius: 20px;
+}
+.header-text
+{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/*----------summary----------*/
+#summary p{
+    font-size: 24px;
+    width: 750px;
+    text-align: justify;
+}
+
+/* ----------my-games---------- */
+.game-col-1{
+    flex-basis: 40%;
+    margin: 20px;
+}
+.game-col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.game-col-2{
+    flex-basis: 40%;
+}
+.game-col-2 h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.game-col-2 p{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#game3 .game-col-1{
+    display: flex;
+    justify-content: center;
+}
+#game3 .game-col-1 img{
+    width: 40%;
+}
+
+/* ----------about-me---------- */
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#about .subtitle{
+    align-items: flex-start;
+}
+#about .box{
+    padding-top: 24px;
+}
+#about p{
+    font-size: 24px;
+    width: 800px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
