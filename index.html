@@ -5,93 +5,86 @@
     <title>Matthew Bates</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a3d174dbfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--nav-->
+    <!--header-->
     <div id="header" class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">My Games</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="cv.html">CV</a></li>
-        </nav>
+        <div class="rows">
+            <div id="title">
+                <h1>Matthew Bates</h1>
+                <h3>Game Programmer</h3>
+            </div>
+            <nav>
+                <a href="https://www.linkedin.com/in/matthew-bates-5549b710a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Matty1301" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <button onclick="window.open('images/CV - Matthew Bates.pdf', '_blank')">CV</button>
+            </nav>
+        </div>
     </div>
 
     <!--summary-->
-    <div id="summary" class="container">
-        <div class="box">
-            <div class="title">
-                <img src="images/headshot.jpg" class="headshot" alt="">
-                <div class="header-text">
-                    <h1>Matthew Bates</h1>
-                    <h3>Game Development Portfolio</h3>
-                </div>
-            </div>
-            <p>I'm Matt, a junior game programmer with a passion for creating 
-                engaging and immersive gaming experiences. I have over two years 
-                experience working in the games industry with a strong foundation in 
-                C++ and Unreal Engine. I have worked on various projects from small 
-                indie games to large AAA titles. Below is a showcase of some of the 
-                projects I have worked on.
+    <div class="container">
+        <div id="summary">
+            <img src="images/headshot.jpg" id="headshot" alt="">
+            <p>
+                I'm Matt, a junior game programmer with over two years 
+                experience working in the games industry. I have a strong foundation in 
+                C++ and Unreal Engine and have worked on various projects from small 
+                indie games to large AAA titles.
             </p>
         </div>
     </div>
 
     <!--my games-->
     <div id="my-games" class="container">
-        <h1 class="sub-title">My Games</h1>
-        <div class="box">
-            <div id="game1" class="row">
-                <div class="game-col-1">
-                    <img src="images/oilstrike75-1.gif" alt="">
-                </div>
-                <div class="game-col-2">
-                    <h3>Oil Strike '75</h3>
-                    <p>This is an 80s arcade-style indie game that I worked on as part of a small team of developers and got to see the full development cycle from start to finish.</p>
-                    <p>The game is written entirely in C++ and makes use of a bespoke game framework.</p>
-                    <p>Due to the small team nature of this project, I was responsible for contributing to several areas of development including physics, 3C’s and level design.</p>
-                    <p>The game is available to play for free on Steam and was also shortlisted in the 2024 TIGA Game Awards.</p>
-                    <button>Steam Store Page</button>
-                </div>
+        <h1 class="sub-title">Projects</h1>
+        <div id="game1" class="row">
+            <div class="game-col-1">
+                <img src="images/oilstrike75-1.gif" alt="">
+            </div>
+            <div class="game-col-2">
+                <h3>Oil Strike '75</h3>
+                <p>This is an 80s arcade-style game that I worked on as part of a small team of developers and got to see the full development cycle from start to finish.</p>
+                <p>The game is written entirely in C++ and makes use of a bespoke game framework.</p>
+                <p>Due to the small team nature of this project, I was responsible for contributing to several areas of development including gameplay, physics and level design.</p>
+                <p>The game is available to play for free on Steam and was also shortlisted in the 2024 TIGA Game Awards.</p>
+                <button onclick="window.open('https://store.steampowered.com/app/2740090/Oil_Strike_75/', '_blank')">Steam Store Page <i class="fa-brands fa-steam"></i></button>
             </div>
         </div>
-        <div class="box">
-            <div id="game2" class="row">
-                <div class="game-col-1">
-                    <img src="images/belfry.gif" alt="">
-                </div>
-                <div class="game-col-2">
-                    <h3>Belfry</h3>
-                    <p>This was a prototype I worked on that explored the concept of a 2d game world which exists within a 3d environment.</p>
-                    <p>
-                        I was responsible for developing many of the game 
-                        engine features such as adding support for quaternions 
-                        and developing a bespoke behaviour tree system.
-                    </p>
-                    <p>
-                        Implementing a complete behaviour tree system 
-                        presented significant technical challenges, however the 
-                        system provided much greater flexibility over the use of 
-                        state machines and ultimately reduced the overall 
-                        workload of the team.
-                    </p>
-                    </p>
-                    <button>Code Snippets</button>
-                </div>
+        <div id="game2" class="row">
+            <div class="game-col-1">
+                <img src="images/belfry.gif" alt="">
+            </div>
+            <div class="game-col-2">
+                <h3>Belfry</h3>
+                <p>This was a prototype I worked on which explored the idea of a 2d game world set in a 3d environment.</p>
+                <p>
+                    I was responsible for developing many of the  
+                    in-engine features such as adding support for quaternions 
+                    and developing a bespoke behaviour tree system.
+                </p>
+                <p>
+                    Implementing a complete behaviour tree system 
+                    presented significant technical challenges, however the 
+                    system provided much greater flexibility over the use of 
+                    state machines and ultimately reduced the overall 
+                    workload of the team.
+                </p>
+                </p>
+                <button onclick="window.open('https://github.com/Matty1301/BelfryCodeSamples/tree/main/BelfryCodeSamples', '_blank')">GitHub Repo <i class="fa-brands fa-github"></i></button>
             </div>
         </div>
-        <div class="box">
-            <div id="game3" class="row">
-                <div class="game-col-1">
-                    <img src="images/frontier-1.webp" alt="">
-                </div>
-                <div class="game-col-2">
-                    <h3>Frontier</h3>
-                    <p>This is a mobile game I developed as a personal project using Unity and published to the Google Play Store.</p>
-                    <p>For the game to be supported by a wide range of devices it required me to research and implement a number of features such as fixed input, touch screen controls and dynamic scaling to ensure a consistent aspect ratio.</p>
-                    <p>The game also features cloud saves and utilizes the Google Play social platform to include a global leaderboard.</p>
-                    <button>GitHub Repo</button>
-                </div>
+        <div id="game3" class="row">
+            <div class="game-col-1">
+                <img src="images/frontier-1.webp" alt="">
+            </div>
+            <div class="game-col-2">
+                <h3>Frontier</h3>
+                <p>This is a mobile game I developed as a personal project using Unity and published to the Google Play Store.</p>
+                <p>The game utilises a number of mobile specific features such as touch screen controls and dynamic scaling to ensure a consistent aspect ratio across multiple devices.</p>
+                <p>The game also features cloud saves and utilises the Google Play social platform to include a global leaderboard.</p>
+                <button onclick="window.open('https://github.com/Matty1301/Frontier', '_blank')">GitHub Repo <i class="fa-brands fa-github"></i></button>
             </div>
         </div>
     </div>
